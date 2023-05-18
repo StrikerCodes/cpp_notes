@@ -51,5 +51,8 @@ Using GPT4 and some research, I have come up with a few criteria for being a pro
 
 ## Implementation
 
-Each major list item in the planning section will have a folder of code files. A makefile will be made to quickly compile and run each file for convenience.
-Concepts of each list item will be implemented, and explenations/notes will be written in comments.
+Each major list item in the planning section will have a folder of code files. A makefile will be made to quickly compile and run each file for convenience.Concepts of each list item will be implemented, and explenations/notes will be written in comments.
+
+Each section is first done in order, but new insights may be added to completed sections as I continue to learn.
+
+Currently looking into combining makefiles to reduce the need to rewrite the same code for each section.
