@@ -5,3 +5,7 @@ default: dtypes
 dtypes: dtypes.cpp
 	@echo "Compiling dtypes.cpp"
 	@c++ -Wall -Wextra -Werror dtypes.cpp -o dtypes
+
+clean:
+	@echo "Deleting executables"
+	@rm dtypes

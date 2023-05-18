@@ -1,7 +1,12 @@
-default: control.cpp
+default: control
 	@echo "Running control"
 	@./control
 
-control.cpp:
+control:
 	@echo "Compiling control.cpp"
 	@g++ -Wall -Wextra -Werror control.cpp -o control
+
+clean:
+	@echo "Deleting executables"
+	@rm control
+
