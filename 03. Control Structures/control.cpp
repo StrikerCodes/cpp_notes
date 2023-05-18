@@ -1,8 +1,18 @@
 #include <iostream>
+#include <string>
 
-using namespace std
+using namespace std;
+
+
+/*
+void ifStructure()
+{
+	bool conditionA;
+}
+*/
 
 int main()
 {
-	cout << "Hello World!" << endl;
+	cout << "Hello World!" << endl;	
 }
+

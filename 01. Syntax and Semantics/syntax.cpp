@@ -1,35 +1,15 @@
+// standard libraries and header files
 #include <iostream>
 
-using namespace std
+// namespaces are like scopes: global < namespace < file < function < control structure
+// using "using namespace [namespace]", variables in the namespace can be used without "::"
+// all standard library variables are declared under "std" namespace
+using namespace std;
 
+// like c, "int main()" is the entry point of a cpp program
 int main()
 {
-	bool a = true;
-	bool b = false;
-	
-	if(a)
-	{
-		cout << "inside if" << endl;
-	}
-	else if(b)
-	{
-		cout << "inside else if" << endl
-	}
-	else
-	{
-		cout << "inside else" << endl
-	}
-	
-
-	bool c = true;
-
-	while (c)
-	{
-		cout << "inside while" << endl;
-	}
-
-	bool d = true;
-
-	for ()
-
+	// with "using namespace std", "std::cout" is shortened to "cout"
+	cout << "Hello World!" << endl; // << operator is used in cpp to print
+	// 
 }
