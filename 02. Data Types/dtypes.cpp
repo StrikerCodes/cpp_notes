@@ -2,6 +2,16 @@
 
 using namespace std;
 
+void printArr(int nums[], int length)
+{
+	cout << "Printing array: ";
+	for(int i = 0; i < length; i++) 
+	{
+		cout << nums[i] << " ";
+	}
+	cout << endl;
+}
+
 int main()
 {
 	/*
@@ -43,4 +53,17 @@ int main()
 	double decimal = 1.23;
 	cout << "decimal: " << decimal << endl;
 	cout << "size: " << sizeof(decimal) << endl;
+
+	// arrays are declared with []
+	int numsA[4] = {3,2,1,5};
+	printArr(numsA, 4);
+	// length can be omitted
+	int numsB[] = {3,2,5};
+	printArr(numsB, 3);
+	// values can also be inserted later
+	int numsC[5];
+	numsC[0] = 0;
+	numsC[1] = 1;
+	printArr(numsC, 2);
+
 }

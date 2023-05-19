@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void printArray(int *nums, int count)
+void printArray(int* nums, int count)
 {
 	cout << "Printing array: ";
 	for (int i = 0; i < count; i++)
@@ -19,9 +19,9 @@ int main()
 	// normal string variable
 	string str = "Pointers!";
 	// pointer variable
-	// "string *" denotes string pointer
+	// "string*" denotes string pointer type
 	// "&str" denotes the address of the variable "str"
-	string *pstr = &str;
+	string* pstr = &str;
 	// the variable pstr is a pointer that points to the address of str.
 
 	// adding "*" before a pointer variable tells the compiler
@@ -36,6 +36,11 @@ int main()
 	int nums[] = {5, 3, 2, 6, 1, 3, 5, 2};
 	cout << "Array variable: " << nums << endl;
 	cout << "Address of first item: " << &nums[0] << endl;
+	// pointer arithmetic can also be used to access array elements
+	int* pArr = nums;
+	cout << (pArr == &nums[0]) << endl;
+	cout << ((pArr + 1) == &nums[1]) << endl;
+	// etc
 
 	// Pointers are commonly used to send a reference to a function
 	// to avoid having to duplicate large amounts of data.
